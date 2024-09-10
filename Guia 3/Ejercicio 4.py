@@ -11,3 +11,24 @@ ejemplo, si el usuario ingresara un n igual a 2 y un m igual a 14, y un p igual 
 el programa deberá mostrar 2, 6, 10, 14.
 
 '''
+#A)
+
+for i in range(5, 11+1, 2):
+    print(i, end="-")
+    
+#B)
+
+num1 = int(input("Ingrese el primer numero: "))
+num2 = int(input("Ingrese el segundo numero: "))
+
+for i in range(num1, num2+1, 3):
+    print(i, end="-")
+    
+#C)
+
+num1 = int(input("\nIngrese el primer numero: "))
+num2 = int(input("Ingrese el segundo numero: "))
+num3 = int(input("Ingrese el tercer numero: "))
+
+for i in range(num1, num2+1, num3):
+    print(i, end="-")
