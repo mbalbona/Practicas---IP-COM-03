@@ -14,18 +14,17 @@ d) Modificar el programa para que en lugar de pedir la cantidad de términos a s
 pida al usuario un número decimal e (muy chico) y calcule la suma hasta que el
 error comparado con el valor de la calculadora sea menor que e
 '''
+import math
 
 n = int(input("Ingrese la cantidad de terminos a sumar: "))
-logaritmo = 0
-cont = 2
+aprox = 0
 
-while True:
-    logaritmo = 1 - 1/cont
-    print(logaritmo, end=" ")
-    
-    if(cont == n):
-        break
-    
-    cont += 1
-print("\nSe hicieron", cont , "variaciones")
-    
+#A)
+for i in range(1,n+1):
+    if i%2 == 0:
+        aprox -= 1/i
+    else:
+        aprox += 1/i
+
+print("Aproximacion de ln(2):", aprox)    
+
